@@ -1,3 +1,359 @@
+/*Global*/
+body {
+  margin: 0;
+}
 
+h1 {
+  margin: 0;
+  padding-top: 370px;
+  font-family: "Cuprum", sans-serif;
+  font-size: 65px;
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 2px 4px 10px #424B54;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+h2 {
+  margin: 0;
+  padding-top: 30px;
+  font-family: "Cuprum", sans-serif;
+  text-shadow: 2px 4px 10px #060404;
+  font-style: italic;
+  font-size: 40px;
+  text-align: center;
+  color: #D5ACA9;
+}
+
+h3 {
+  margin: 0;
+  padding-top: 100px;
+  font-family: "Cuprum", sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+/*Header*/
+.splash {
+  background-image: url("../images/pexels-darina-belonogova-8789746.jpg");
+  height: 1080px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.splash .nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+}
+.splash .nav-list .nav-link {
+  font-weight: 600;
+  font-family: "Cuprum", sans-serif;
+  color: #424B54;
+  text-shadow: 2px 4px 10px whitesmoke;
+  padding: 8px;
+  text-decoration: none;
+  transition: all 1s;
+}
+.splash .nav-list .nav-link:hover {
+  color: #C5BAAF;
+}
+.splash .nav-list .fa-solid {
+  color: #424B54;
+  text-shadow: 2px 4px 10px whitesmoke;
+  padding: 8px;
+  text-decoration: none;
+  transition: all 1s;
+}
+.splash .nav-list .fa-solid:hover {
+  color: #C5BAAF;
+}
+
+.splash-inner {
+  text-align: center;
+}
+.splash-inner .btn {
+  margin: 50px 0;
+  display: inline-block;
+  color: whitesmoke;
+  font-weight: 600;
+  padding: 20px 40px;
+  text-decoration: none;
+  background-color: #C5BAAF;
+  border-radius: 5%;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.splash-inner .btn:hover {
+  color: #424B54;
+}
+
+/*Game history*/
+.Game-history {
+  background: #ffe8d6;
+  height: 720px;
+}
+.Game-history .text {
+  padding: 200px 350px;
+  font-family: "Cuprum", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #060404;
+  line-height: 35px;
+  text-indent: 60px;
+  text-align: justify;
+}
+
+/*Game rules*/
+.Game-rules {
+  background: #ddbea9;
+  height: 720px;
+}
+.Game-rules .two-objects {
+  display: flex;
+  justify-content: center;
+  padding: 80px 100px;
+}
+.Game-rules .two-objects .text {
+  padding-right: 30px;
+  font-family: "Cuprum", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #060404;
+  line-height: 35px;
+  text-indent: 60px;
+  text-align: justify;
+}
+.Game-rules .two-objects .text p {
+  text-indent: 0;
+}
+.Game-rules .two-objects img {
+  padding-top: 15px;
+}
+
+/*Game*/
+.Game {
+  background: #cb997e;
+  height: 720px;
+}
+.Game .text {
+  padding: 100px 350px 15px 350px;
+  font-family: "Cuprum", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #060404;
+  line-height: 35px;
+  text-indent: 60px;
+  text-align: justify;
+}
+.Game .text p {
+  text-align: right;
+  font-weight: 800;
+}
+.Game .Buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.Game .Buttons button {
+  margin: 25px;
+  cursor: pointer;
+  font-size: 0;
+  border: none;
+  background: #cb997e;
+}
+.Game .Buttons button .fa-regular {
+  color: #060404;
+  font-size: 80px;
+  padding-left: 7.5px;
+  text-align: center;
+  transition: all 1s;
+}
+.Game .Buttons button .fa-regular:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+.Game .Buttons button .fa-solid {
+  color: #060404;
+  font-size: 80px;
+  transition: all 1s;
+}
+.Game .Buttons button .fa-solid:hover {
+  transform: scale(1.3);
+  transition: all 1s;
+}
+.Game .Messages, .Game .Result {
+  text-align: center;
+  color: #060404;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/*Footer*/
+footer {
+  margin: 0;
+  background: #B7B7A4;
+}
+footer .container-fluid {
+  padding: 30px 160px;
+}
+footer .container-fluid .social-media-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container-fluid .social-media-content .copyright {
+  margin: 0;
+  list-style-type: none;
+  font-size: 20px;
+}
+footer .container-fluid .social-media-content .social-media {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex: 50% 0;
+  align-items: center;
+}
+footer .container-fluid .social-media-content .social-media .social {
+  font-size: 0;
+  padding: 0 10px;
+}
+footer .container-fluid .social-media-content .social-media .social .fab, footer .container-fluid .social-media-content .social-media .social .fa-brands {
+  font-size: 20px;
+  background: #060404;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 50%;
+  transition: all 1s;
+}
+footer .container-fluid .social-media-content .social-media .social .fab:hover, footer .container-fluid .social-media-content .social-media .social .fa-brands:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+@media (max-width: 576px) {
+  /*Body*/
+  h1 {
+    padding-top: 10px;
+  }
+  /*Header*/
+  .splash .container {
+    padding: 0 5px;
+    font-size: 12px;
+  }
+  .splash .container .nav-list {
+    padding: 5px 0;
+  }
+  .splash-inner {
+    padding: 50px 5px;
+  }
+  /*Game history*/
+  .Game-history .text {
+    padding: 35px 20px;
+  }
+  /*Game rules*/
+  .Game-rules {
+    height: 1080px;
+  }
+  .Game-rules .two-objects {
+    display: inline;
+  }
+  .Game-rules .two-objects .text {
+    padding: 15px 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .Game-rules .two-objects img {
+    width: 85%;
+    margin-left: 7%;
+  }
+  /*Game*/
+  .Game {
+    height: 1080px;
+  }
+  .Game .text {
+    padding: 35px 20px;
+  }
+  .Game .Buttons button {
+    margin: 5px;
+  }
+  .Game .Buttons button .fa-regular, .Game .Buttons button .fa-solid {
+    font-size: 60px;
+  }
+  .Game .Messages, .Game .Result {
+    padding-top: 50px;
+    font-size: 25px;
+  }
+  /*Footer*/
+  footer .container-fluid {
+    padding: 10px 5px 30px 5px;
+  }
+  footer .container-fluid .social-media-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  footer .container-fluid .social-media-content .copyright {
+    padding: 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  /*Game history*/
+  .Game-history .text {
+    padding: 35px 20px;
+  }
+  /*Game rules*/
+  .Game-rules {
+    height: 1080px;
+  }
+  .Game-rules .two-objects {
+    display: inline;
+  }
+  .Game-rules .two-objects .text {
+    padding: 15px 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .Game-rules .two-objects img {
+    width: 70%;
+    margin-left: 15%;
+  }
+  /*Game*/
+  .Game .text {
+    padding: 35px 20px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1400px) {
+  /*Game history*/
+  .Game-history .text {
+    padding: 200px 150px;
+  }
+  /*Game rules*/
+  .Game-rules {
+    height: 1080px;
+  }
+  .Game-rules .two-objects {
+    display: inline;
+  }
+  .Game-rules .two-objects .text {
+    padding: 15px 50px;
+  }
+  .Game-rules .two-objects img {
+    margin-left: 30%;
+  }
+  /*Game*/
+  .Game .text {
+    padding: 35px 20px;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxTQUFBO0FBYUE7RUFDSSxTQUFBO0FDWEo7O0FEY0E7RUFDSSxTQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQ0FuQlU7RUFvQlYsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBckJnQjtFQXNCaEIsaUNBQUE7QUNYSjs7QURjQTtFQUNJLFNBQUE7RUFDQSxpQkFBQTtFQUNBLGlDQTdCVTtFQThCVixpQ0FBQTtFQUNBLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsY0EvQnVCO0FDb0IzQjs7QURjQTtFQUNJLFNBQUE7RUFDQSxrQkFBQTtFQUNBLGlDQXhDVTtFQXlDVixrQkFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLGNBdENpQjtBQzJCckI7O0FEY0EsU0FBQTtBQUNBO0VBQ0ksdUVBQUE7RUFDQSxjQUFBO0VBQ0EsMkJBQUE7RUFDQSxzQkFBQTtFQUNBLDRCQUFBO0FDWEo7QURhSTtFQUNJLGFBQUE7RUFDQSx5QkFBQTtFQUNBLG1CQUFBO0VBQ0EscUJBQUE7RUFDQSxTQUFBO0VBQ0EsYUFBQTtBQ1hSO0FEYVE7RUFDSSxnQkFBQTtFQUNBLGlDQWpFRTtFQWtFRixjQWhFZTtFQWlFZixvQ0FBQTtFQUNBLFlBQUE7RUFDQSxxQkFBQTtFQUNBLGtCQUFBO0FDWFo7QURjUTtFQUNJLGNBdEVVO0FDMER0QjtBRGVRO0VBQ0ksY0E1RWU7RUE2RWYsb0NBQUE7RUFDQSxZQUFBO0VBQ0EscUJBQUE7RUFDQSxrQkFBQTtBQ2JaO0FEZ0JRO0VBQ0ksY0FsRlU7QUNvRXRCOztBRG1CQTtFQUNJLGtCQUFBO0FDaEJKO0FEa0JJO0VBQ0ksY0FBQTtFQUNBLHFCQUFBO0VBQ0EsaUJBaEdZO0VBaUdaLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSxxQkFBQTtFQUNBLHlCQWpHYztFQWtHZCxpQkFBQTtFQUNBLG1CQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0FD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 */
