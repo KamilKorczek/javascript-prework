@@ -36,6 +36,16 @@ h2 {
     color: $font-header-second-color;
 }
 
+h3 {
+    margin: 0;
+    padding-top: 100px;
+    font-family: $font-header;
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+    color: $font-section-color;
+}
+
 /*Header*/
 .splash {
     background-image: url("../images/pexels-darina-belonogova-8789746.jpg");
@@ -99,5 +109,22 @@ h2 {
 
     .btn:hover {
         color: $font-header-color;
+    }
+}
+
+/*Game history*/
+.Game-history {
+    background: $background-game-history;
+    height: 720px;
+
+    .text {
+        padding: 200px 350px;
+        font-family: $font-header;
+        font-size: 20px;
+        font-style: italic;
+        color: $text-color;
+        line-height: 35px;
+        text-indent: 60px;
+        text-align: justify;
     }
 }
