@@ -72,14 +72,25 @@
 			</div>
 		</div>
 	</section>
-	<div class="container">
-		<div id="buttons">
-			<button type="button" id="button-rock">Kamień</button>
-			<button type="button" id="button-paper">Papier</button>
-			<button type="button" id="button-scissors">Nożyce</button>
+	<section class="Game" id="game">
+		<div class="container">
+			<h3>Czas zagrać!</h3>
+			<div class="text">
+				<a>Gra działa tylko w trybie gracz - komputer. Gracz wciska jeden z przycisków poniżej w zależności od ruchu jaki chce wykonać.
+				Każdy przedmiot to odpowiedni przycisk. Pod przyciskami widać rezultat gry oraz liczbę zwycięstw.</a>
+				<div>
+					<p>POWODZENIA I MIŁEJ ZABAWY!</p>
+				</div>
+			</div>
+			<div class="Buttons" id="buttons">
+				<button type="button" id="button-paper"><i class="fa-regular fa-note-sticky"></i>Papier</button>
+				<button type="button" id="button-rock"><i class="fa-solid fa-gem"></i>Kamień</button>
+				<button type="button" id="button-scissors"><i class="fa-solid fa-scissors"></i>Nożyce</button>
+			</div>
+			<div class="Messages" id="messages"></div>
+			<div class="Result" id="result"></div>
 		</div>
-		<div id="messages"></div>
-	</div>
+	</section>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>
