@@ -159,3 +159,70 @@ h3 {
         }
     }
 }
+
+/*Game*/
+.Game {
+    background: $background-game;
+    height: 720px;
+
+    .text {
+        padding: 100px 350px 15px 350px;
+        font-family: $font-header;
+        font-size: 20px;
+        font-style: italic;
+        color: $text-color;
+        line-height: 35px;
+        text-indent: 60px;
+        text-align: justify;
+
+        p {
+            text-align: right;
+            font-weight: 800;
+        }
+    }
+
+    .Buttons {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        button {
+            margin: 25px;
+            cursor: pointer;
+            font-size: 0;
+            border: none;
+            background: $background-game;
+
+            .fa-regular {
+                color: $text-color;
+                font-size: 80px;
+                padding-left: 7.5px;
+                text-align: center;
+                transition: all 1s;
+            }
+
+            .fa-regular:hover {
+                transform: scale(1.2);
+                transition: all 1s;
+            }
+
+            .fa-solid {
+                color: $text-color;
+                font-size: 80px;
+                transition: all 1s;
+            }
+
+            .fa-solid:hover {
+                transform: scale(1.3);
+                transition: all 1s;
+            }
+        }
+    }
+
+    .Messages, .Result {
+        text-align: center;
+        color: $text-color;
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
