@@ -226,3 +226,57 @@ h3 {
         font-weight: 700;
     }
 }
+
+/*Footer*/
+footer {
+    margin: 0;
+    background: $background-footer;
+
+    .container-fluid {
+        padding: 30px 160px;
+    
+        .social-media-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .copyright {
+                margin: 0;
+                list-style-type: none;
+                font-size: 20px;
+            }
+
+            .social-media {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                flex: 50% 0;
+                align-items: center;
+                
+                .social {
+                    font-size: 0;
+                    padding: 0 10px;
+                
+                    .fab, .fa-brands {
+                        font-size: 20px;
+                        background: $text-color;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        color: $font-header-color;
+                        border-radius: 50%;
+                        transition: all 1s;
+                    }
+
+                    .fab:hover, .fa-brands:hover {
+                        transform: scale(1.2);
+                        transition: all 1s;
+                    }
+                }
+            }
+        }
+    }
+}
