@@ -1,4 +1,6 @@
-var buttonRock, buttonPaper, buttonScissors;
+var buttonRock, buttonPaper, buttonScissors, computerMove, playerMove, randomNumber, playerInput;
+var playerCount = 0;
+var computerCount = 0;
 
 buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
@@ -8,10 +10,14 @@ buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
 
 /**
- * Describe this function...
+ * The buttonClicked function carries out the various stages of the game. First, it clears the field from the displayed messages to the user,
+ * then assigns the value of the button to the player, then randomizes a number from 1 to 3 inclusive,
+ * in the next step it assigns the value from the randomly selected range to the computer and substitutes the appropriate word for the numbers,
+ * i.e. paper, stone or scissors. Finally, it compares the player's move with that of the computer and displays who won and what moves were played by both players.
  */
 function buttonClicked(argButtonName) {
   clearMessages();
+  clearResult();
   console.log(argButtonName + ' został kliknięty');
 
   playerMove = argButtonName;
@@ -22,10 +28,9 @@ function buttonClicked(argButtonName) {
   displayResult(playerMove, computerMove);
 }
 
-var computerMove, playerMove, randomNumber, playerInput;
-
 /**
- * Describe this function...
+ * The getMoveName function assigns a randomly selected number to the appropriate term, ie stone, paper, scissors. Additionally,
+ * if there is a number other than 1 to 3 inclusive. He takes this move as a stone.
  */
 function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
@@ -42,20 +47,25 @@ function getMoveName(argMoveId) {
 }
 
 /**
- * Describe this function...
+ * The displayResult function compares the player's movement with the computer's movement and tells who won and what moves were made by both players.
  */
 function displayResult(argPlayerMove, argComputerMove) {
-  console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
+  console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ' , ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz!');
+    playerCount = playerCount + 1;
   } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
     printMessage('Wygrywasz!');
+    playerCount = playerCount + 1;
   } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
     printMessage('Wygrywasz!');
+    playerCount = playerCount + 1;
   } else if (argPlayerMove == argComputerMove) {
     printMessage('Remis!');
   } else {
     printMessage('Przegrywasz :(');
+    computerCount = computerCount + 1;
   }
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+    printResult('Wynik gry: Komputer > ' + computerCount + ' - ' + playerCount + ' < Gracz.');
 }
