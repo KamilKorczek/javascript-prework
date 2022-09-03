@@ -128,3 +128,34 @@ h3 {
         text-align: justify;
     }
 }
+
+/*Game rules*/
+.Game-rules {
+    background: $background-game-rules;
+    height: 720px;
+
+    .two-objects {
+        display: flex;
+        justify-content: center;
+        padding: 80px 100px;
+
+        .text {
+            padding-right: 30px;
+            font-family: $font-header;
+            font-size: 20px;
+            font-style: italic;
+            color: $text-color;
+            line-height: 35px;
+            text-indent: 60px;
+            text-align: justify;
+
+            p {
+                text-indent: 0;
+            }
+        }
+
+        img {
+            padding-top: 15px;
+        }
+    }
+}
