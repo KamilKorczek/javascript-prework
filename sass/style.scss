@@ -1,0 +1,103 @@
+/*Global*/
+$font-header: 'Cuprum', sans-serif;
+$font-header-color: whitesmoke;
+$font-header-shadow-color: #424B54;
+$font-header-second-color: #D5ACA9;
+$font-nav-link-color: #C5BAAF;
+$text-color: #060404;
+$font-section-color: #000000;
+$background-game-history: #ffe8d6;
+$background-game-rules: #ddbea9;
+$background-game: #cb997e;
+$background-footer: #B7B7A4;
+
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 370px;
+    font-family: $font-header;
+    font-size: 65px;
+    text-align: center;
+    color: $font-header-color;
+    text-shadow: 2px 4px 10px $font-header-shadow-color;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 30px;
+    font-family: $font-header;
+    text-shadow: 2px 4px 10px $text-color;
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+    color: $font-header-second-color;
+}
+
+/*Header*/
+.splash {
+    background-image: url("../images/pexels-darina-belonogova-8789746.jpg");
+    height: 1080px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .nav-list {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 15px;
+    
+        .nav-link {
+            font-weight: 600;
+            font-family: $font-header;
+            color: $font-header-shadow-color;
+            text-shadow: 2px 4px 10px $font-header-color;
+            padding: 8px;
+            text-decoration: none;
+            transition: all 1s;
+        }
+
+        .nav-link:hover {
+            color: $font-nav-link-color;
+        }
+
+        .fa-solid {
+            color: $font-header-shadow-color;
+            text-shadow: 2px 4px 10px $font-header-color;
+            padding: 8px;
+            text-decoration: none;
+            transition: all 1s;
+        }
+
+        .fa-solid:hover {
+            color: $font-nav-link-color;
+        }
+    }
+}
+
+.splash-inner {
+    text-align: center;
+
+    .btn {
+        margin: 50px 0;
+        display: inline-block;
+        color: $font-header-color;
+        font-weight: 600;
+        padding: 20px 40px;
+        text-decoration: none;
+        background-color: $font-nav-link-color;
+        border-radius: 5%;
+        letter-spacing: 3px;
+        cursor: pointer;
+        transition: all 1s;
+    }
+
+    .btn:hover {
+        color: $font-header-color;
+    }
+}

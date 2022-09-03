@@ -59,7 +59,3 @@ function displayResult(argPlayerMove, argComputerMove) {
   }
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
-
-
-
-
