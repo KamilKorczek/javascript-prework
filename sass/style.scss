@@ -280,3 +280,149 @@ footer {
         }
     }
 }
+
+@media (max-width: 576px) {
+    /*Body*/
+    h1 {
+       padding-top: 10px;
+    }
+
+    /*Header*/
+    .splash .container {
+        padding: 0 5px;
+        font-size: 12px;
+
+        .nav-list {
+            padding: 5px 0;
+        }        
+    }
+
+    .splash-inner {
+        padding: 50px 5px;
+    }
+
+    /*Game history*/
+    .Game-history .text {
+        padding: 35px 20px;
+    }
+
+    /*Game rules*/
+    .Game-rules {
+        height: 1080px;
+
+        .two-objects {
+            display: inline;
+        
+            .text {
+                padding: 15px 20px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            img {
+                width: 85%;
+                margin-left: 7%;
+            }
+        }
+    }
+    
+    /*Game*/
+    .Game {
+        height: 1080px;
+
+        .text {
+            padding: 35px 20px;
+        }
+
+        .Buttons {
+
+            button {
+                margin: 5px;
+
+                .fa-regular, .fa-solid {
+                    font-size: 60px;
+                }
+            }
+        }
+
+        .Messages, .Result {
+            padding-top: 50px;
+            font-size: 25px;
+        }
+    }
+
+    /*Footer*/
+    footer .container-fluid {
+        padding: 10px 5px 30px 5px;
+
+        .social-media-content {
+            flex-wrap: wrap;
+            flex-direction: column;
+        
+            .copyright {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    /*Game history*/
+    .Game-history .text {
+        padding: 35px 20px;
+    }
+
+    /*Game rules*/
+    .Game-rules {
+        height: 1080px;
+
+        .two-objects {
+            display: inline;
+        
+            .text {
+                padding: 15px 20px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            img {
+                width: 70%;
+                margin-left: 15%;
+            }
+        }
+    }
+
+    /*Game*/
+    .Game .text {
+        padding: 35px 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1400px) {
+    /*Game history*/
+    .Game-history .text {
+        padding: 200px 150px;
+    }
+
+    /*Game rules*/
+    .Game-rules {
+        height: 1080px;
+
+        .two-objects {
+            display: inline;
+        
+            .text {
+                padding: 15px 50px;
+            }
+
+            img {
+                margin-left: 30%;
+            }
+        }
+    }
+
+    /*Game*/
+    .Game .text {
+        padding: 35px 20px;
+    }
+}
