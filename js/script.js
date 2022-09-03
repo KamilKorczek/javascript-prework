@@ -1,12 +1,14 @@
-var buttonRock, buttonPaper, buttonScissors, computerMove, playerMove, randomNumber, playerInput;
-var playerCount = 0;
-var computerCount = 0;
+let computerMove = 0;
+let playerMove = 0;
+let randomNumber = 0;
 
-buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
-buttonPaper = document.getElementById('button-paper');
+
+const buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
-buttonScissors = document.getElementById('button-scissors');
+
+const buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
 
 /**
@@ -46,6 +48,8 @@ function getMoveName(argMoveId) {
   }
 }
 
+let playerCount = 0;
+let computerCount = 0;
 /**
  * The displayResult function compares the player's movement with the computer's movement and tells who won and what moves were made by both players.
  */
@@ -66,6 +70,6 @@ function displayResult(argPlayerMove, argComputerMove) {
     printMessage('Przegrywasz :(');
     computerCount = computerCount + 1;
   }
-    printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
-    printResult('Wynik gry: Komputer > ' + computerCount + ' - ' + playerCount + ' < Gracz.');
+  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+  printResult('Wynik gry: Komputer > ' + computerCount + ' - ' + playerCount + ' < Gracz.');
 }
