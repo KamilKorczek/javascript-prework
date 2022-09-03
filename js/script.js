@@ -1,4 +1,4 @@
-var argButtonName, buttonRock, buttonPaper, buttonScissors;
+var buttonRock, buttonPaper, buttonScissors;
 
 buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
@@ -22,7 +22,7 @@ function buttonClicked(argButtonName) {
   displayResult(playerMove, computerMove);
 }
 
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+var computerMove, playerMove, randomNumber, playerInput;
 
 /**
  * Describe this function...
